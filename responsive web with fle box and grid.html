@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout with Flexbox and Grid</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo">FlexGrid</div>
+            <div class="hamburger">☰</div>
+            <ul class="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h1>Modern Web Design with Flexbox & Grid</h1>
+            <p>Create responsive layouts with the power of modern CSS layout techniques</p>
+        </div>
+    </section>
+
+    <!-- Features Section using Grid -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-img">CSS Grid</div>
+                    <div class="feature-content">
+                        <h3>Grid Layout</h3>
+                        <p>Perfect for two-dimensional layouts with rows and columns. Great for overall page structure.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">Flexbox</div>
+                    <div class="feature-content">
+                        <h3>Flexible Boxes</h3>
+                        <p>Ideal for one-dimensional layouts and alignment. Excellent for navigation and components.</p>
+                    </div>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-img">Responsive</div>
+                    <div class="feature-content">
+                        <h3>Responsive Design</h3>
+                        <p>Layouts that adapt to different screen sizes through media queries.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section using Flexbox -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2>Our Services</h2>
+            <div class="services-flex">
+                <div class="service-box">
+                    <div class="service-icon">🎨</div>
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful, user-friendly interfaces that capture your brand identity.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">💻</div>
+                    <h3>Web Development</h3>
+                    <p>Building robust, responsive websites with modern technologies.</p>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">📱</div>
+                    <h3>Mobile Optimization</h3>
+                    <p>Ensuring your website performs perfectly on all devices.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>FlexGrid</h3>
+                    <p>Modern web design solutions using the latest CSS techniques</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/in/enock-fifii-baffoe-98a645322/">LinkedIn</a></li>
+                        <li><a href="https://github.com/PLP-WebTechnologies/feb-2025-css-layouts-and-responsive-design-Lavantic">GitHub</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 ENOCK FIFII BAFFOE-FlexGrid. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple toggle for mobile menu
+        document.querySelector('.hamburger').addEventListener('click', function() {
+            document.querySelector('.menu').classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
